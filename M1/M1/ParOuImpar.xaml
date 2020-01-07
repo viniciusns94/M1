@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="M1.ParOuImpar">
     <ContentPage.Content>
-        <StackLayout> <!-- Organiza os elementos dentro de uma View de forma linear (layout) -->
+        <StackLayout> <!-- Organiza os elementos dentro de uma View de forma vertical ou horizontal (layout) -->
             <Label Text="Determina se um número é par ou ímpar" /> <!-- Label mapeia um TextView em Android -->
             <Entry x:Name="entry_parimpar_valor" Keyboard="Numeric" Placeholder="Informe um n°"/> <!-- Entry mapeia um EdiText em Android -->
             <Button x:Name="button_parimpar_executar" Text="Executar" Clicked="Button_parimpar_executar_Clicked"/>

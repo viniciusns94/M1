@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="M1.CalculadoraSimples">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Calculadora Simples"/>
+            <Label Text="Valor A:"/>
+            <Entry x:Name="entry_calcularasimples_a" Keyboard="Numeric" Placeholder="Informe um n°"/>
+            <Label Text="Valor B:"/>
+            <Entry x:Name="entry_calcularasimples_b" Keyboard="Numeric" Placeholder="Informe um n°"/>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="somar" Text="+" Clicked="ButtonCalculadoraSimples"/>
+                <Button x:Name="subtrair" Text="-" Clicked="ButtonCalculadoraSimples"/>
+                <Button x:Name="dividir" Text="/" Clicked="ButtonCalculadoraSimples"/>
+                <Button x:Name="multiplicar" Text="*" Clicked="ButtonCalculadoraSimples"/>
+            </StackLayout>
+            <Label x:Name="entry_calculadorasimples_resp"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
