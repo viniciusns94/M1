@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="M1.ParOuImpar">
+    <ContentPage.Content>
+        <StackLayout> <!-- Organiza os elementos dentro de uma View de forma linear (layout) -->
+            <Label Text="Determina se um número é par ou ímpar" /> <!-- Label mapeia um TextView em Android -->
+            <Entry x:Name="entry_parimpar_valor" Keyboard="Numeric" Placeholder="Informe um n°"/> <!-- Entry mapeia um EdiText em Android -->
+            <Button x:Name="button_parimpar_executar" Text="Executar" Clicked="Button_parimpar_executar_Clicked"/>
+            <Label x:Name="label_parimpar_resposta" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
